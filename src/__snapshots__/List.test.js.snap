@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> renders without crashing 1`] = `
+<section
+  className="List"
+>
+  <header
+    className="List-header"
+  >
+    <h2>
+       
+      
+       
+    </h2>
+  </header>
+  <div
+    className="List-Cards"
+  >
+    <button
+      className="List-add-button"
+      type="button"
+    >
+      +Add Random Card
+    </button>
+  </div>
+</section>
+`;

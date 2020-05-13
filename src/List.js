@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card'
 function List(props) {
-     
+
     return(
         <section className = "List">
             <header className = "List-header">

@@ -1,18 +1,22 @@
 import React from 'react';
 import './App.css';
 import List from './List'
+class App extends React.Component {
+  static defaultProps = {
+   store: {lists:[]} 
+  };
+  render(){
 
-function App(props) {
   return ( 
     <main className = 'App' >
       <header className = "App-header" >
         <h1> Trelloyes! </h1> 
       </header> 
       <div className = "App-list" > 
-        {props.store.lists.map(list => (<List 
+        {this.props.store.lists.map(list => (<List 
             key = {list.id}
             header = {list.header}
-            allCards= {props.store.allCards}
+            allCards= {this.props.store.allCards}
             cardIds ={list.cardIds}
              />))}
             
@@ -21,7 +25,7 @@ function App(props) {
             </main>
           );
         }
-
+      }
         export default App;
 
  
